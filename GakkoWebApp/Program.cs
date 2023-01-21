@@ -1,4 +1,5 @@
 using GakkoWebApp.Services;
+using System.Data.SqlClient;
 
 namespace GakkoWebApp
 {
@@ -7,9 +8,10 @@ namespace GakkoWebApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            //connection string
+            SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
             // Add services to the container.
-            builder.Services.AddScoped<IStudentService, StudentsService>();
+            builder.Services.AddScoped<IStudentService, SqlServerStudentService>();
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
