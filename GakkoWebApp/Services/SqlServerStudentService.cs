@@ -45,7 +45,12 @@ namespace GakkoWebApp.Services
         
         public void DeleteStudent(Student student)
         {
-            throw new NotImplementedException();
+            SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
+            SqlCommand com = new SqlCommand();
+            com.Connection = con;
+            com.CommandText = "DELETE FROM STUDENT WHERE IndexNumber = 's20001'";
+            con.Open();
+            SqlDataReader dr = com.ExecuteReader();
         }
     }
 }
