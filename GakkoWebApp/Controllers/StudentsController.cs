@@ -36,5 +36,18 @@ namespace GakkoWebApp.Controllers
             _studentService.InsertStudent(newStudent);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Delete()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Student removedStudent)
+        {
+            _studentService.DeleteStudent(removedStudent);
+            return RedirectToAction("Index");
+        }
     }
 }

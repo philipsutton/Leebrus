@@ -8,49 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GakkoWebApp
 build_property.RootNamespace = GakkoWebApp
-build_property.ProjectDir = C:\Users\s20379\Desktop\GakkoWebApp (1)\GakkoWebApp\GakkoWebApp\
+build_property.ProjectDir = D:\dev\LeebrusProject\GakkoWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\s20379\Desktop\GakkoWebApp (1)\GakkoWebApp\GakkoWebApp
+build_property.MSBuildProjectDirectory = D:\dev\LeebrusProject\GakkoWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Home/Index.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Home/Privacy.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Shared/Error.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Shared/_Layout2.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Students/Create.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Students/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Students/Index.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Students/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/_ViewImports.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/_ViewStart.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/s20379/Desktop/GakkoWebApp (1)/GakkoWebApp/GakkoWebApp/Views/Shared/_Layout.cshtml]
+[D:/dev/LeebrusProject/GakkoWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-asz06rfdyv

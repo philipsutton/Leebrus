@@ -25,12 +25,12 @@
         @foreach(var st in Model)
         {
             <tr>
-                <td>@st.IdStudent</td>
                 <td>@st.FirstName</td>
                 <td>@st.LastName</td>
                 <td>@st.Email</td>
                 <td>@st.Address</td>
                 <td>@st.IndexNumber</td>
+                <td><a href="/students/delete" class="waves-effect waves-light btn" style="background-color: darkred">X</a></td>
             </tr>
         }
     </tbody>
