@@ -33,7 +33,7 @@ namespace GakkoWebApp.Services
             SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
             SqlCommand com = new SqlCommand();
             com.Connection = con;
-            com.CommandText = "INSERT INTO Student(IdStudent, FirstName, LastName, Email, Address, IndexNumber) VALUES(DEFAULT, @FirstName, @LastName, @Email, @Address, @IndexNumber)";
+            com.CommandText = "INSERT INTO Student(FirstName, LastName, Email, Address, IndexNumber) VALUES(@FirstName, @LastName, @Email, @Address, @IndexNumber)";
             com.Parameters.AddWithValue("FirstName", student.FirstName);
             com.Parameters.AddWithValue("LastName", student.LastName);
             com.Parameters.AddWithValue("Email", student.Email);
@@ -48,7 +48,8 @@ namespace GakkoWebApp.Services
             SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
             SqlCommand com = new SqlCommand();
             com.Connection = con;
-            com.CommandText = "DELETE FROM STUDENT WHERE IndexNumber = 's20001'";
+            com.CommandText = "DELETE FROM STUDENT WHERE IndexNumber = @IndexNumber";
+            com.Parameters.AddWithValue("IndexNumber", student.IndexNumber);
             con.Open();
             SqlDataReader dr = com.ExecuteReader();
         }
