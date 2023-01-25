@@ -3,7 +3,6 @@
 <h1>Students</h1>
 
 <a href="/students/create" class="waves-effect waves-light btn">Add student</a>
-<a href="/students/delete" class="waves-effect waves-light btn" style="background-color: red">Remove student</a>
 <form>
     Search: <input type="text" id="query" name="query" />
     <button type="submit" class="btn">Search</button>
@@ -31,6 +30,7 @@
                 <td>@st.Email</td>
                 <td>@st.Address</td>
                 <td>@st.IndexNumber</td>
+                <td><a href="/students/delete/?IndexNumber=@st.IndexNumber" class="waves-effect waves-light btn" style="background-color: red">X</a></td>
             </tr>
         }
     </tbody>

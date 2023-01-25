@@ -6,5 +6,6 @@ namespace GakkoWebApp.Services
     { 
         List<Subject> GetSubjects(string query);
         void InsertSubject(Subject subject);
+        void DeleteSubject(Subject subject);
     }
 }
