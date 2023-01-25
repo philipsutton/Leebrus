@@ -24,8 +24,14 @@ namespace GakkoWebApp.Services
                 student.IndexNumber = dr["IndexNumber"].ToString();
                 students.Add(student);
             }
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return students;
+            }
+            
+            return students.Where(e => e.LastName == query).ToList();
 
-            return students;
+            
         }
 
         public void InsertStudent(Student student)
