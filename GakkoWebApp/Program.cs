@@ -12,6 +12,7 @@ namespace GakkoWebApp
             SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
             // Add services to the container.
             builder.Services.AddScoped<IStudentService, SqlServerStudentService>();
+            builder.Services.AddScoped<ISubjectService, SqlServerSubjectService>();
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
