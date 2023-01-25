@@ -38,9 +38,10 @@ namespace GakkoWebApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete()
+        public IActionResult Delete(string IndexNumber)
         {
-            return View();
+            ViewBag.IndexNumber = IndexNumber;
+            return View("Delete");
         }
 
         [HttpPost]
