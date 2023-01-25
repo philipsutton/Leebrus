@@ -32,4 +32,16 @@ public class SubjectsController : Controller
             _subjectService.InsertSubject(newSubject);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult Delete(string Name)
+        {
+            ViewBag.Name = Name;
+            return View("Delete");
+        }
+        [HttpPost]
+        public IActionResult Delete(Subject removedSubject)
+        {
+            _subjectService.DeleteSubject(removedSubject);
+            return RedirectToAction("Index");
+        }
 }

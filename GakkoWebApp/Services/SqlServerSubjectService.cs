@@ -34,4 +34,15 @@ public class SqlServerSubjectService : ISubjectService
         con.Open();
         SqlDataReader dr = com.ExecuteReader();
     }
+    
+    public void DeleteSubject(Subject subject)
+    {
+        SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
+        SqlCommand com = new SqlCommand();
+        com.Connection = con;
+        com.CommandText = "DELETE FROM SUBJECT WHERE Name = @Name";
+        com.Parameters.AddWithValue("Name", subject.Name);
+        con.Open();
+        SqlDataReader dr = com.ExecuteReader();
+    }
 }

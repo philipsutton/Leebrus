@@ -2,11 +2,6 @@
 
 <h1>Subjects</h1>
 <a href="subjects/create" class="waves-effect waves-light btn">Add subject</a>
-<a href="" class="waves-effect waves-light btn" style="background-color: red">Remove subject</a>
-<form>
-    Search: <input type="text" id="query" name="query" />
-    <button type="submit" class="btn">Search</button>
-</form>
 <table style="color: #fff" class="striped">
     <thead>
         <tr>
@@ -18,8 +13,8 @@
             <tr>
                 <td>@su.Name</td>
                 <td><a href="">View students </a></td>
+                <td><a href="subjects/delete/?Name=@su.Name" class="waves-effect waves-light btn" style="background-color: red">X</a></td>
             </tr>
-            
         }
     </tbody>
 </table> 
