@@ -44,4 +44,13 @@ public class SubjectsController : Controller
             _subjectService.DeleteSubject(removedSubject);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult Students(int IdSubject, Subject subject)
+        {
+            ViewBag.IdSubject = IdSubject;
+            var list = _subjectService.GetStudentsFromSubject(subject);
+            return View("students", list);
+        }
+        
+      
 }

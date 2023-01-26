@@ -17,6 +17,7 @@ public class SqlServerSubjectService : ISubjectService
         while (dr.Read())
         {
             Subject subject = new Subject();
+            subject.IdSubject = int.Parse(dr["IdSubject"].ToString());
             subject.Name = dr["Name"].ToString();
             subjects.Add(subject);
         }
@@ -44,5 +45,31 @@ public class SqlServerSubjectService : ISubjectService
         com.Parameters.AddWithValue("Name", subject.Name);
         con.Open();
         SqlDataReader dr = com.ExecuteReader();
+    }
+    public List<Student> GetStudentsFromSubject(Subject subject)
+    {
+        SqlConnection con = new SqlConnection("Data Source=db-mssql.pjwstk.edu.pl;Initial Catalog=2019SBD;Integrated Security=True");
+        SqlCommand com = new SqlCommand();
+        com.Connection = con;
+        com.CommandText = "SELECT FirstName, LastName, IndexNumber from studentsubject inner join student on studentsubject.student_idstudent = student.idstudent WHERE StudentSubject.Subject_IdSubject = @IdStudentSubject";
+        com.Parameters.AddWithValue("IdStudentSubject", subject.IdSubject);
+        con.Open();
+        SqlDataReader dr = com.ExecuteReader();
+        var students = new List<Student>();
+        while (dr.Read())
+        {
+            Student student = new Student();
+            student.FirstName = dr["FirstName"].ToString();
+            student.LastName = dr["LastName"].ToString();
+            student.IndexNumber = dr["IndexNumber"].ToString();
+            students.Add(student);
+        }
+
+        return students;
+
+            
+
+
+            
     }
 }

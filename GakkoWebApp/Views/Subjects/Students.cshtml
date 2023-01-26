@@ -1,0 +1,23 @@
+﻿@model List<Student>
+<a href="/subjects" class="waves-effect waves-light btn" style="background-color: blue">Back to subjects</a>
+<h1>Students</h1>
+<table style="color: #fff" class="striped">
+    <thead>
+    <tr>
+        <th>Index number</th>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach(var st in Model)
+    {
+        <tr>
+            <td>@st.IndexNumber</td>
+            <td>@st.FirstName</td>
+            <td>@st.LastName</td>
+        </tr>
+    }
+    </tbody>
+
+</table>
