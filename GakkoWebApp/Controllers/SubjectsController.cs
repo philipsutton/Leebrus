@@ -52,5 +52,12 @@ public class SubjectsController : Controller
             return View("students", list);
         }
         
+        [HttpGet]
+        public IActionResult StudentProfile(int IdSubject, Subject subject, Student student)
+        {
+            ViewBag.IdSubject = IdSubject;
+            var list = _subjectService.GetStudentProfile(subject, student);
+            return View("studentprofile", list);
+        }
       
 }

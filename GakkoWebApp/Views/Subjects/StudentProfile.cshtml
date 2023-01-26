@@ -1,4 +1,4 @@
-﻿@model List<Student>
+﻿@model List<Grade>
 <a href="/subjects" class="waves-effect waves-light btn" style="background-color: blue">Back to subjects</a>
 <h1>Students</h1>
 <table style="color: #fff" class="striped">
@@ -10,15 +10,14 @@
     </tr>
     </thead>
     <tbody>
-    @foreach(var st in Model)
+    @foreach(var gr in Model)
     {
         <tr>
-            <td>@st.IndexNumber</td>
-            <td>@st.FirstName</td>
-            <td>@st.LastName</td>
-            <td><a href="/subjects/studentprofile/?IdSubject=@ViewBag.IdSubject">View student </a></td>
+            <td>@gr.GradeValue</td>
+            <td>@gr.Description</td>
         </tr>
     }
     </tbody>
+    <p>@ViewBag.IdSubject</p>
 
 </table>
